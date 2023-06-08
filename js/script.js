@@ -8,7 +8,6 @@ function traerDatos(){
     obtener.onload = function(){
         if (obtener.status == 200){
             var datosCanciones = JSON.parse(obtener.response);
-			console.log(datosCanciones)
             datosCanciones.canciones.sort(function(a,b){
                 return b.reproducciones - a.reproducciones;
             })
