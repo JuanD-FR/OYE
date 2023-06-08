@@ -46,7 +46,6 @@ function myFunction() {
     var input = document.getElementById('myInput').value
     input=input.toLowerCase();
     var x = document.getElementsByClassName('can');
-    console.log(x);
       
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
