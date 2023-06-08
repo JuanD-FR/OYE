@@ -2,7 +2,7 @@ document.querySelector(obtenerDatos());
 
 function obtenerDatos(){ 
     
-    var listaCan = JSON.parse(localStorage.getItem("datosCanciones"));
+    var listaCan = JSON.parse(sessionStorage.getItem("datosCanciones"));
     
     $("#can1").attr("src","/canciones/".concat(listaCan.canciones[0].ruta));
 	a=listaCan.canciones[0].ruta;
