@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"> </script>
+    <title>OYE</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark backGNav">
+      <div class="container">
+          <div class="container" id="container"> 
+            <div class="row">
+              <div class="col-6">
+                <a class="navbar-brand" href="index.html">
+                  <h1 class="tipoLetra">
+                    <img id="img" src="/imagenes/LOGO1.jpg">
+                    OYE
+                  </h1>
+                </a>
+              </div>
+              <div class="col-4" id="margenes">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#barra"
+                  aria-controls="barra"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>                 
+          </div>
+
+        <div class="collapse navbar-collapse" id="barra">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><h5 class="tipoLetra">Inicio</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/canciones.html"><h5 class="tipoLetra">Canciones</h5></a> 
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <a class="nav-link text-white btn btn-success rounded" data-toggle="modal" data-target="#ventana" ><h6 class="tipoLetra">Contáctanos</h6></a>
+                  <div class="modal" tabindex="-1" role="dialog" id="ventana">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="tipoLetra" class="modal-title">Contacto</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="tipoLetra">info@oye.com</p>
+                          </br>
+                          <p class="tipoLetra" style="color:blue">+57 (601) 6754525</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-dismiss="modal"><h6 class="tipoLetra">Cerrar</h6></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            <br/>
+              <li class="nav-item">
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                  <a class="nav-link text-white btn btn-success" href="/login.html"><h6 class="tipoLetra">Iniciar sesión</h6></a> 
+                </div>
+              </li>
+            <br/>
+              <li class="nav-item">
+                <div class="btn-group mr-2" role="group" aria-label="Third group">
+                  <a class="nav-link text-white btn btn-success" href="/registro.html"><h6 class="tipoLetra">Registro</h6></a> 
+                </div>
+              </li>
+            <br/>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container mt-4 mb-4 px-2 py-2">
+        <div class="row">
+          <div class="col">
+            <h2 class=" col text-center">Canciones</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col; buscar" id="alinear">
+            <input class="rounded" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar.." title="Escribe el nombre de la canción">
+          </div> 
+        </div>
+        <div class="row">
+          <div class="container col-10" >
+            <div class="row">
+              <div class="can col-sm-12 col-md-6 col-lg-3"> 
+                <div class="border text-center">
+                  <img class="tamañoImagenes" src="/imagenes/icon_1.svg" alt="">
+                  <h3 id="nomb1"></h3>
+                  <audio class="controlAudio" id="can1" src="/canciones/uno.mp3" controls></audio>
+                </div>
+              </div>
+              <div class="can col-sm-12 col-md-6 col-lg-3">
+                <div class="border text-center">
+                  <img class="tamañoImagenes" src="/imagenes/icon_2.svg" alt="">
+                  <h3 id="nomb2"></h3>
+                  <audio class="controlAudio" id="can2" src="/canciones/dos.mp3" controls></audio>
+                </div>
+              </div>
+              <div class="can col-sm-12 col-md-6 col-lg-3">
+                <div class="border text-center">
+                  <img class="tamañoImagenes" src="/imagenes/icon_3.svg" alt="">
+                  <h3 id="nomb3"></h3>
+                  <audio class="controlAudio" id="can3" src="/canciones/tres.mp3" controls></audio>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <div class="row">
+              <div class="can col-sm-12 col-md-6 col-lg-3">
+                <div class="border text-center">
+                  <img class="tamañoImagenes" src="/imagenes/icon_2.svg" alt="">
+                  <h3 id="nomb4"></h3>
+                  <audio class="controlAudio" id="can4" src="/canciones/cuatro.mp3" controls></audio>
+                </div>
+              </div>
+              <div class="can col-sm-12 col-md-6 col-lg-3">
+                <div class="border text-center">
+                  <img class="tamañoImagenes" src="/imagenes/icon_3.svg" alt="">
+                  <h3 id="nomb5"></h3>
+                  <audio class="controlAudio" id="can5" src="/canciones/cinco.mp3" controls></audio>
+                </div>
+              </div>
+                <div class="can col-sm-12 col-md-6 col-lg-3">
+                  <div class="border text-center">
+                    <img class="tamañoImagenes" src="/imagenes/icon_1.svg" alt="">
+                    <h3 id="nomb6"></h3>
+                    <audio class="controlAudio" id="can6" src="/canciones/seis.mp3" controls></audio>
+                  </div>
+                </div>
+              </div>
+              <br/>
+              <div class="row">
+                <div class="can col-sm-12 col-md-6 col-lg-3">
+                  <div class="border text-center">
+                    <img class="tamañoImagenes" src="/imagenes/icon_3.svg" alt="">
+                    <h3 id="nomb7"></h3>
+                    <audio class="controlAudio" id="can7" src="/canciones/siete.mp3" controls></audio>
+                  </div>
+                </div>
+                <div class="can col-sm-12 col-md-6 col-lg-3">
+                  <div class="border text-center">
+                    <img class="tamañoImagenes" src="/imagenes/icon_1.svg" alt="">
+                    <h3 id="nomb8"></h3>
+                    <audio class="controlAudio" id="can8" src="/canciones/ocho.mp3" controls></audio>
+                  </div>
+                </div>
+                <div class="can col-sm-12 col-md-6 col-lg-3">
+                  <div class="border text-center">
+                    <img class="tamañoImagenes" src="/imagenes/icon_2.svg" alt="">
+                    <h3 id="nomb9"></h3>
+                    <audio class="controlAudio" id="can9" src="/canciones/nueve.mp3" controls></audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </main>
+
+    <footer class="container-fluid py-1 bg-dark text-white">
+      <div class="row">
+        <div class="col-6">
+          Comparte la música
+        </div>
+        <div class="col-6" id="final">
+          © Derechos reservados
+        </div>
+      </div>
+    </footer>
+
+<!--JAVASCRIPTS---------------------------------------------------------------------------------------------------------->
+    <script src="/js/scriptCanciones.js"></script>
+    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<!--JAVASCRIPTS---------------------------------------------------------------------------------------------------------->
+
+  </body>
+</html>

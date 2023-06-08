@@ -1,0 +1,173 @@
+@media only screen and (min-width:320px) {
+  #img {
+    width: 40%;
+  }
+  #container{
+    width:40%;
+  } 
+  .buscar{
+      text-align: center;
+      width: 40%;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  #img {
+    width: 70%;
+  }
+  #container{
+    width:auto;
+  }
+  #myUL{
+      display: none;
+  }
+  .noMostrar{
+      display: none;
+  }
+  .buscar{
+      width: 50%;
+  }
+
+  .visibilidad{
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  #img {
+    width: 40%;
+  }
+  #container{
+    width:40%;
+  } 
+  .buscar{
+      text-align: center;
+      width: 40%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #img {
+    width: 30%;
+  }
+  #container{
+    width:auto;
+  }
+  #myUL{
+      display: none;
+  }
+  .noMostrar{
+      display: none;
+  }
+  /*.buscar{
+      display: none;
+  }*/
+}
+
+@media only screen and (min-width: 992px) {
+  #img {
+    width: 40%;
+  }
+  #container{
+    width:40%;
+  } 
+  .buscar{
+      text-align: center;
+      width: 40%;
+  }
+  .visibilidad{
+    visibility: visible;
+  }
+}
+
+#margenes{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+  
+.tamañoImagenes{
+    width:60%;
+    height: 60%;
+}
+
+#final{
+    text-align: end;
+}
+
+.tipoLetra{
+    font-family: Cambria;
+}
+
+.colorLetra{
+    color: blue;
+}
+
+.alinearTexto{
+    text-align: left;
+}
+
+.bordeInf{
+    border-bottom: 1px solid #eaeaea;
+}
+
+.backGNav{
+    background-color: #211523;
+    
+}
+
+.textos{
+    text-transform: capitalize;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid black;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    margin-top: -1px; 
+    background-color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+    display: block
+  }
+
+.error {
+    color: red
+}
+
+#alinear{
+    margin: auto;
+}
+
+.controlAudio{
+    width: 100%;
+}
+
+#nomostrar{
+    display: none;
+}
+
+.alinear2{
+  text-align: center;
+}
+
+.can{
+  display: contents;
+}
