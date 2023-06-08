@@ -1,10 +1,8 @@
 document.querySelector(obtenerDatos());
 
 function obtenerDatos(){ 
-    a=sessionStorage.getItem("datosCanciones");
-	console.log(a)
     var listaCan = JSON.parse(sessionStorage.getItem("datosCanciones"));
-    console.log(listaCan)
+    
     $("#can1").attr("src","/canciones/".concat(listaCan.canciones[0].ruta));
     var n1 = document.getElementById('nomb1');
     n1.innerHTML = listaCan.canciones[0].nombre;
