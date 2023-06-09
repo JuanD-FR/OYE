@@ -11,14 +11,12 @@ function traerDatos(){
             datosCanciones.canciones.sort(function(a,b){
                 return b.reproducciones - a.reproducciones;
             })
-            a=datosCanciones.canciones[0].ruta;
-			console.log(a);
+    
             $("#cancion1").attr("src","/canciones/".concat(datosCanciones.canciones[0].ruta));
             $("#cancion2").attr("src","/canciones/".concat(datosCanciones.canciones[1].ruta));
             $("#cancion3").attr("src","/canciones/".concat(datosCanciones.canciones[2].ruta));
 
             var c1= document.getElementById('nombre1');
-			console.log(c1);
             c1.innerHTML = datosCanciones.canciones[0].nombre;
             var c2= document.getElementById('nombre2');
             c2.innerHTML = datosCanciones.canciones[1].nombre;
