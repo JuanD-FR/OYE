@@ -18,6 +18,7 @@ function traerDatos(){
             $("#cancion3").attr("src","/canciones/".concat(datosCanciones.canciones[2].ruta));
 
             var c1= document.getElementById('nombre1');
+			console.log(c1);
             c1.innerHTML = datosCanciones.canciones[0].nombre;
             var c2= document.getElementById('nombre2');
             c2.innerHTML = datosCanciones.canciones[1].nombre;
