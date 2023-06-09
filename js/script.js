@@ -11,7 +11,8 @@ function traerDatos(){
             datosCanciones.canciones.sort(function(a,b){
                 return b.reproducciones - a.reproducciones;
             })
-            
+            a=datosCanciones.canciones[0].ruta;
+			console.log(a);
             $("#cancion1").attr("src","/canciones/".concat(datosCanciones.canciones[0].ruta));
             $("#cancion2").attr("src","/canciones/".concat(datosCanciones.canciones[1].ruta));
             $("#cancion3").attr("src","/canciones/".concat(datosCanciones.canciones[2].ruta));
