@@ -171,3 +171,7 @@
 .can{
   display: contents;
 }
+
+h6.tipoLetra{
+  margin: 0px !important;
+}
