@@ -32,11 +32,13 @@ function validar(registro) {
   if (registro.confirmacion.value.trim().length == 0) {
     document.getElementById("errorConfirmacionNada").innerText = "Campo obligatorio";
     registro.contrasena.focus();
+	return false;
   }
   
   if (registro.contrasena.value != registro.confirmacion.value) {
     document.getElementById("errorConfirmacion").innerText = "¡Las contraseñas no coinciden!";
     registro.contrasena.focus();
+	return false;
   }
 
   if (registro.genero.value == "") {
